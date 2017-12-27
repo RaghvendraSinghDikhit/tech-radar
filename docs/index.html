@@ -3,7 +3,6 @@
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 <title>Technologies Heading Towards</title>
-<link rel="shortcut icon" href="https://www.zalando.de/favicon.ico">
 
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="radar.js"></script>
@@ -48,9 +47,9 @@ radar_visualization({
   title: "Technologies Heading Towards",
   quadrants: [
     { name: "Languages & Frameworks" },
-    { name: "Infrastructure" },
-    { name: "Techniques" },
-    { name: "Data Management" }
+    { name: "Infrastructure & Platforms" },
+    { name: "Concepts & Techniques" },
+    { name: "Tools" }
   ],
   rings: [
     { name: "ADOPT", color: "#93c47d" },
@@ -65,6 +64,22 @@ radar_visualization({
       {
         quadrant: 3,
         ring: 0,
+        label: "Spark",
+        active: false,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 0,
+        label: "Hadoop/HDFS",
+        active: false,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 0,
         label: "AWS EMR",
         active: false,
         link: "",
@@ -73,71 +88,7 @@ radar_visualization({
       {
         quadrant: 3,
         ring: 0,
-        label: "Spark",
-        active: false,
-        link: "",
-        moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 1,
-        label: "AWS Data Pipeline",
-        active: false,
-        link: "",
-        moved: 1
-      },
-      {
-        quadrant: 3,
-        ring: 1,
-        label: "Flink",
-        active: false,
-        link: "",
-        moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 1,
-        label: "Google BigQuery",
-        active: false,
-        link: "",
-        moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 1,
-        label: "Presto",
-        active: false,
-        link: "",
-        moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 2,
-        label: "Airflow",
-        active: false,
-        link: "",
-        moved: 1
-      },
-      {
-        quadrant: 3,
-        ring: 2,
-        label: "Hadoop/MR",
-        active: false,
-        link: "",
-        moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 2,
-        label: "Hadoop/YARN",
-        active: false,
-        link: "",
-        moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 3,
-        label: "Esper",
+        label: "AWS S3",
         active: false,
         link: "",
         moved: 0
@@ -145,7 +96,15 @@ radar_visualization({
       {
         quadrant: 3,
         ring: 0,
-        label: "AWS S3",
+        label: "AWS SNS",
+        active: false,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 0,
+        label: "AWS SQS",
         active: false,
         link: "",
         moved: 0
@@ -169,15 +128,7 @@ radar_visualization({
       {
         quadrant: 3,
         ring: 0,
-        label: "etcd",
-        active: false,
-        link: "",
-        moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 0,
-        label: "PostgreSQL",
+        label: "Kafka",
         active: false,
         link: "",
         moved: 0
@@ -193,7 +144,31 @@ radar_visualization({
       {
         quadrant: 3,
         ring: 0,
-        label: "Solr",
+        label: "Salr",
+        active: false,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 0,
+        label: "PostgreSQL",
+        active: false,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 0,
+        label: "Fastlane",
+        active: false,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 1,
+        label: "AWS Data Pipeline",
         active: false,
         link: "",
         moved: 0
@@ -209,7 +184,7 @@ radar_visualization({
       {
         quadrant: 3,
         ring: 1,
-        label: "Hadoop/HDFS",
+        label: "Flink",
         active: false,
         link: "",
         moved: 0
@@ -217,7 +192,31 @@ radar_visualization({
       {
         quadrant: 3,
         ring: 1,
-        label: "KairosDB",
+        label: "Google BigQuery",
+        active: false,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 1,
+        label: "Unity",
+        active: false,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 1,
+        label: "Kibana",
+        active: false,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 1,
+        label: "SASS",
         active: false,
         link: "",
         moved: 0
@@ -225,7 +224,7 @@ radar_visualization({
       {
         quadrant: 3,
         ring: 2,
-        label: "Consul",
+        label: "AWS Kinesis",
         active: false,
         link: "",
         moved: 0
@@ -241,7 +240,7 @@ radar_visualization({
       {
         quadrant: 3,
         ring: 2,
-        label: "RocksDB",
+        label: "Android Things",
         active: false,
         link: "",
         moved: 1
@@ -249,7 +248,7 @@ radar_visualization({
       {
         quadrant: 3,
         ring: 3,
-        label: "Aerospike",
+        label: "ActiveMQ",
         active: false,
         link: "",
         moved: 0
@@ -265,7 +264,7 @@ radar_visualization({
       {
         quadrant: 3,
         ring: 3,
-        label: "Graphite",
+        label: "Grunt",
         active: false,
         link: "",
         moved: 0
@@ -281,7 +280,7 @@ radar_visualization({
       {
         quadrant: 3,
         ring: 3,
-        label: "InfluxDB",
+        label: "Gulp",
         active: false,
         link: "",
         moved: 0
@@ -321,7 +320,7 @@ radar_visualization({
       {
         quadrant: 3,
         ring: 3,
-        label: "Oracle DB",
+        label: "New Relic",
         active: false,
         link: "",
         moved: 0
@@ -329,7 +328,7 @@ radar_visualization({
       {
         quadrant: 3,
         ring: 3,
-        label: "Riak",
+        label: "LESS",
         active: false,
         link: "",
         moved: 0
@@ -340,12 +339,12 @@ radar_visualization({
         label: "ZooKeeper",
         active: false,
         link: "",
-        moved: -1
+        moved: 0
       },
       {
-        quadrant: 2,
-        ring: 0,
-        label: "Cloud Computing",
+        quadrant: 3,
+        ring: 3,
+        label: "RabbitMQ",
         active: false,
         link: "",
         moved: 0
@@ -353,7 +352,15 @@ radar_visualization({
       {
         quadrant: 2,
         ring: 0,
-        label: "Serverless Arch",
+        label: "BigData",
+        active: false,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "Cloud Computing",
         active: false,
         link: "",
         moved: 0
@@ -372,7 +379,7 @@ radar_visualization({
         label: "Chat-bot",
         active: false,
         link: "",
-        moved: 1
+        moved: 0
       },
       {
         quadrant: 2,
@@ -380,7 +387,7 @@ radar_visualization({
         label: "IoT",
         active: false,
         link: "",
-        moved: 1
+        moved: 0
       },
       {
         quadrant: 2,
@@ -393,7 +400,7 @@ radar_visualization({
       {
         quadrant: 2,
         ring: 0,
-        label: "BigData",
+        label: "Serverless Arch",
         active: false,
         link: "",
         moved: 0
@@ -401,7 +408,23 @@ radar_visualization({
       {
         quadrant: 2,
         ring: 0,
-        label: "Spring",
+        label: "Data Science",
+        active: false,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "Containerization",
+        active: false,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "Progress Web Apps",
         active: false,
         link: "",
         moved: 0
@@ -433,7 +456,7 @@ radar_visualization({
       {
         quadrant: 2,
         ring: 1,
-        label: "Data Science",
+        label: "Rule Engine",
         active: false,
         link: "",
         moved: 0
@@ -448,8 +471,8 @@ radar_visualization({
       },
       {
         quadrant: 2,
-        ring: 1,
-        label: "Rule Enginge",
+        ring: 2,
+        label: "Augmented Reality",
         active: false,
         link: "",
         moved: 0
@@ -472,46 +495,6 @@ radar_visualization({
       },
       {
         quadrant: 2,
-        ring: 2,
-        label: "Ember.js",
-        active: false,
-        link: "",
-        moved: 0
-      },
-      {
-        quadrant: 2,
-        ring: 2,
-        label: "gRPC",
-        active: false,
-        link: "",
-        moved: 0
-      },
-      {
-        quadrant: 2,
-        ring: 2,
-        label: "Http4s",
-        active: false,
-        link: "",
-        moved: 0
-      },
-      {
-        quadrant: 2,
-        ring: 2,
-        label: "Redux",
-        active: false,
-        link: "",
-        moved: 0
-      },
-      {
-        quadrant: 2,
-        ring: 2,
-        label: "Augmented Reality",
-        active: false,
-        link: "",
-        moved: 0
-      },
-      {
-        quadrant: 2,
         ring: 3,
         label: "Service Oriented Arch",
         active: false,
@@ -527,30 +510,6 @@ radar_visualization({
         moved: 0
       },
       {
-        quadrant: 2,
-        ring: 3,
-        label: "BackboneJS",
-        active: false,
-        link: "",
-        moved: 0
-      },
-      {
-        quadrant: 2,
-        ring: 3,
-        label: "Drools",
-        active: false,
-        link: "",
-        moved: 0
-      },
-      {
-        quadrant: 2,
-        ring: 3,
-        label: "Spray",
-        active: false,
-        link: "",
-        moved: 0
-      },
-      {
         quadrant: 1,
         ring: 0,
         label: "Docker",
@@ -561,7 +520,7 @@ radar_visualization({
       {
         quadrant: 1,
         ring: 0,
-        label: "HAProxy",
+        label: "Google Analytics",
         active: false,
         link: "",
         moved: 0
@@ -569,15 +528,7 @@ radar_visualization({
       {
         quadrant: 1,
         ring: 0,
-        label: "Hystrix",
-        active: false,
-        link: "",
-        moved: 0
-      },
-      {
-        quadrant: 1,
-        ring: 0,
-        label: "Jetty",
+        label: "Force.com",
         active: false,
         link: "",
         moved: 0
@@ -586,22 +537,6 @@ radar_visualization({
         quadrant: 1,
         ring: 0,
         label: "Kubernetes",
-        active: false,
-        link: "",
-        moved: 1
-      },
-      {
-        quadrant: 1,
-        ring: 0,
-        label: "Nginx",
-        active: false,
-        link: "",
-        moved: 0
-      },
-      {
-        quadrant: 1,
-        ring: 0,
-        label: "STUPS",
         active: false,
         link: "",
         moved: 0
@@ -617,7 +552,47 @@ radar_visualization({
       {
         quadrant: 1,
         ring: 0,
-        label: "ZMON",
+        label: "Jetty",
+        active: false,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "HAProxy",
+        active: false,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "AWS VPC",
+        active: false,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "Firebase",
+        active: false,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "AndroidForWork",
+        active: false,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "G Suite",
         active: false,
         link: "",
         moved: 0
@@ -625,7 +600,63 @@ radar_visualization({
       {
         quadrant: 1,
         ring: 1,
-        label: "Undertow",
+        label: "AWS Lambda",
+        active: false,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 1,
+        label: "API.AI",
+        active: false,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 1,
+        label: "Amazon Alexa",
+        active: false,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 1,
+        label: "Eclipse Kura",
+        active: false,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 1,
+        label: "Xamarin",
+        active: false,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 1,
+        label: "AWS Lex",
+        active: false,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 1,
+        label: "AWS Mobile",
+        active: false,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 1,
+        label: "FB Messenger",
         active: false,
         link: "",
         moved: 0
@@ -633,7 +664,31 @@ radar_visualization({
       {
         quadrant: 1,
         ring: 2,
-        label: "AWS Lambda",
+        label: "AWS Device Farm",
+        active: false,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 2,
+        label: "Keycloak",
+        active: false,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 2,
+        label: "Google Tag Manager",
+        active: false,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 2,
+        label: "WatchOS",
         active: false,
         link: "",
         moved: 0
@@ -663,17 +718,9 @@ radar_visualization({
         moved: 0
       },
       {
-        quadrant: 1,
-        ring: 3,
-        label: "saltstack",
-        active: false,
-        link: "",
-        moved: 0
-      },
-      {
         quadrant: 0,
         ring: 0,
-        label: "ReactJS",
+        label: "Angular",
         active: true,
         link: "",
         moved: 0
@@ -689,7 +736,7 @@ radar_visualization({
       {
         quadrant: 0,
         ring: 0,
-        label: "Angular",
+        label: "Python",
         active: true,
         link: "",
         moved: 0
@@ -697,7 +744,15 @@ radar_visualization({
       {
         quadrant: 0,
         ring: 0,
-        label: "Python",
+        label: "R",
+        active: true,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 0,
+        label: "ReactJS",
         active: true,
         link: "",
         moved: 0
@@ -720,8 +775,8 @@ radar_visualization({
       },
       {
         quadrant: 0,
-        ring: 1,
-        label: "Redux",
+        ring: 0,
+        label: "Spring",
         active: true,
         link: "",
         moved: 0
@@ -736,16 +791,32 @@ radar_visualization({
       },
       {
         quadrant: 0,
-        ring: 2,
-        label: "Drools",
+        ring: 1,
+        label: "Redux",
         active: true,
         link: "",
         moved: 0
       },
       {
         quadrant: 0,
-        ring: 2,
-        label: "ARKit",
+        ring: 1,
+        label: "D3.js",
+        active: true,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 1,
+        label: "TypeScript",
+        active: true,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 1,
+        label: "Mosquitto",
         active: true,
         link: "",
         moved: 0
@@ -761,7 +832,7 @@ radar_visualization({
       {
         quadrant: 0,
         ring: 2,
-        label: "R",
+        label: "ARKit",
         active: true,
         link: "",
         moved: 0
@@ -769,7 +840,39 @@ radar_visualization({
       {
         quadrant: 0,
         ring: 2,
-        label: "Rust",
+        label: "Drools",
+        active: true,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 2,
+        label: "Google VR",
+        active: true,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 2,
+        label: "Ember.js",
+        active: true,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 2,
+        label: "Foundation",
+        active: true,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 2,
+        label: "TensorFire",
         active: true,
         link: "",
         moved: 0
@@ -809,23 +912,15 @@ radar_visualization({
       {
         quadrant: 0,
         ring: 3,
-        label: "JRuby",
-        active: true,
-        link: "",
-        moved: 0
-      },
-      {
-        quadrant: 0,
-        ring: 3,
-        label: "Jython",
-        active: true,
-        link: "",
-        moved: 0
-      },
-      {
-        quadrant: 0,
-        ring: 3,
         label: "BackboneJS",
+        active: true,
+        link: "",
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 3,
+        label: "Bootstrap",
         active: true,
         link: "",
         moved: 0
@@ -853,80 +948,8 @@ radar_visualization({
         active: true,
         link: "",
         moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 0,
-        label: "AWS SNS",
-        active: false,
-        link: "",
-        moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 0,
-        label: "AWS SQS",
-        active: false,
-        link: "",
-        moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 0,
-        label: "Kafka",
-        active: false,
-        link: "",
-        moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 0,
-        label: "Nakadi",
-        active: false,
-        link: "",
-        moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 2,
-        label: "AWS Kinesis",
-        active: false,
-        link: "",
-        moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 3,
-        label: "ActiveMQ",
-        active: false,
-        link: "",
-        moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 3,
-        label: "Artemis",
-        active: false,
-        link: "",
-        moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 3,
-        label: "HornetQ",
-        active: false,
-        link: "",
-        moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 3,
-        label: "RabbitMQ",
-        active: false,
-        link: "",
-        moved: 0
-      },
-  ]
+      }
+      ]
   //ENTRIES
 });
 </script>
